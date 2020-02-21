@@ -1,0 +1,6 @@
+This is my code to answer the Riddler Express question from FiveThirtyEight.com 
+
+Riddle:
+On a warm, sunny day, Nick glanced at a thermometer, and noticed something quite interesting. When he toggled between the Fahrenheit and Celsius scales, the digits of the temperature — when rounded to the nearest degree — had switched. For example, this works for a temperature of 61 degrees Fahrenheit, which corresponds to a temperature of 16 degrees Celsius.
+
+However, the temperature that day was not 61 degrees Fahrenheit. What was the temperature?
