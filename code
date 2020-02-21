@@ -1,0 +1,19 @@
+#Creating the workspace
+data = np.arange(32,1000)
+df = pd.DataFrame(data)
+df.columns = ['Fahrenheit']
+df['Celsius'] = (df['Fahrenheit'] - 32)*(5/9)
+clean = df.round()
+cln = clean.astype(int)
+
+#Flipping digits
+def palindrome(num):
+    rev=0
+    while num > 0:
+        rev = (10*rev) + num%10
+        num //= 10
+    return rev
+cln['Flip'] = cln['Celsius'].apply(palindrome)
+
+#Finding the answer
+cln.loc[cln['Flip'] == cln['Fahrenheit']]
